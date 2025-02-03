@@ -1,31 +1,23 @@
-//FIND LCM => Longest Common Multiple.
-
 #include<iostream>
 using namespace std;
 
-int LCM(int n, int m){
-	int LCM = 1;
-	int max;
-	if(n < m){
-		max = n;
-	}
-	else if(m<n){
-		max = m;
-	}
-	for(int i = 1; i<=max;i++){
-		if( (n % i == 0 && m % i == 0) || (n % i == 0 || m % i == 0)){
-			LCM *= i;
+int LCM(int a, int b){
+	int LCM = 0;
+	for(int i = 1; i>0;i++){
+		if(i % a == 0 && i % b == 0){
+			LCM = i;
+			break;
 		}
 	}
 	return LCM;
 }
-
 int main(){
-	int n,m;
-	cout<<"Enter a 2 numbers for LCM: "<<endl;
-	cin>>n>>m;
+	int a,b;
+	cout<<"Enter two numbers: "<<endl;
+	cin>>a>>b;
 	
-	int ans = LCM(n,m);
+	int ans = LCM(a,b);
 	cout<<"LCM is: "<<ans;
+	
 	return 0;
 }
