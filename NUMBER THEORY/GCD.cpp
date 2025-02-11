@@ -6,12 +6,8 @@ using namespace std;
 int GCD(int m, int n){
 	int GCD = 1;
 	int min;
-	if(m < n){
-		min = m;
-	}
-	else{
-		min = n;
-	}
+	(m<n)?min= m : min = n;
+	
 	for(int i = 1; i<=min; i++){
 		if(m % i == 0 && n % i == 0){
 			GCD = i;
