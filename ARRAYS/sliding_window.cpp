@@ -29,7 +29,7 @@ int main(){
     int arr[] = {1,2,3,4,5};
     int n = 5;
     int k = 3;
-    int ans  = maxSubarraySum(arr,n,k);
+    int ans  = maxSubarraySum(arr,k,n);
     cout<<"max subarray sum is: "<<ans;
 
     return 0;
