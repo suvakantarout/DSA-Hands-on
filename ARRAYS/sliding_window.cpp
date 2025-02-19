@@ -20,7 +20,6 @@ int maxSubarraySum(int arr[], int k,int n){
         if(sum > maxsum){
             maxsum = sum;
         }
-        // maxsum = max(maxsum, sum);
     }
     return maxsum;
 
