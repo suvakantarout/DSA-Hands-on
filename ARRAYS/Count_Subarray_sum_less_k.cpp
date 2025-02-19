@@ -18,11 +18,10 @@ int subarray(int arr[], int size, int k){
     return count;
 }
 
-
 int main(){
-    int arr[] = {1,2,3};
-    int size = 3;
-    int k = 6;
+    int arr[] = {1,2,3,4};
+    int size = 4;
+    int k = 10;
 
     int ans = subarray(arr,size,k);
     cout<<"Number of subarray with sum < k are: "<<ans;
