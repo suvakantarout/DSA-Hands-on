@@ -7,10 +7,10 @@ int main(){
 	
 	unordered_map<string, string> table;
 	
-//	Insertion
+//	INSERTION
 	table["in"] = "india";     // Process-1
 	
-	pair<string, string>p      // Process-2
+	pair<string, string>p;      // Process-2
 	p.first = "en";
 	p.second = "England";
 	table.insert(p);
@@ -26,29 +26,39 @@ int main(){
 	cout<<table.at("in")<<endl;
 
 
-//	Traversing through a map
+//	TRAVERSING THROUGH A MAP
 
-//	unordered_map<string, string>:: iterator it;
-//	for(int it = table.begin(); it<= table.end(); it++){
-//		cout<<*it<<endl;
-//	}
-	for(auto it : table){
-		cout<<it.first <<"->" <<it.second<<endl;
+	// USING AN ITERATOR
+	// unordered_map<string, string>:: iterator it;
+	// for(int it = table.begin(); it <= table.end(); it++){
+	// 	int key = it->first;
+	// 	int value = it->second;
+	// 	cout<<"key: "<<key<<" "<<"value: "<<value<<endl;
+	// }
+
+	// USING FOREACH LOOP
+	for(auto it : table){  //auto wil automatically detect the type of the MAP.
+		cout<<it.first <<" -> " <<it.second<<endl;
 	}
 	
 	
-//	Finding key
+	// FINDING KEY
 	if(table.find("in") != table.end()){
 		cout<<"Key found"<<endl;
 	}
 	else{
-		
 		cout<<"Key not found";
 	}
 	
+	// ERASE ELEMENT FROM MAP
+	table.erase("in");
+	for(auto it : table){
+		cout<<it.first <<" -> " <<it.second<<endl;
+	}
+
 	
-//	counting the key
-//	table.count();
+	// COUNTING KEY
+	//	table.count();
 	if(table.count("in") == 0){
 		cout<<"Key not found"<<endl;
 	}
