@@ -2,8 +2,12 @@
 #include<iostream>
 using namespace std;
 void prefixsum(int a[],int size){
-	for(int i = 1; i<size; i++){
-		a[i] = a[i-1] + a[i];
+	// for(int i = 1; i<size; i++){
+	// 	a[i] = a[i-1] + a[i];
+	// }
+	// OR
+	for(int i = 0; i<size; i++){
+		a[i+1] = a[i] + a[i+1];
 	}
 	return;
 }
