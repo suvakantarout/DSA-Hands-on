@@ -62,20 +62,15 @@ int main(){
 	cout<<*it1<<" ";
 	it1++;
 	}
+
 	cout<<endl;
+
 	yourlist.swap(mylist);
+	
 	list<int>:: iterator it2 = mylist.begin();
 	while(it2 != mylist.end()){
 	cout<<*it2<<" ";
 	it2++;
-	}
-	
-	yourlist.insert(yourlist.begin(),1000)<<endl;
-	yourlist.swap(mylist);
-	list<int>:: iterator it3 = mylist.begin();
-	while(it3 != mylist.end()){
-	cout<<*it3<<" ";
-	it3++;
 	}
 	return 0;
 }

@@ -1,4 +1,4 @@
-// if the prefix and suffix sum of an array is equal then return true else returj false ?
+// if the prefix and suffix sum of an array is equal then return true else return false ?
 
 #include<iostream>
 #include<vector>
