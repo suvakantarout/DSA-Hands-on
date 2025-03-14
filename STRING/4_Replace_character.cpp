@@ -7,8 +7,8 @@
     #include<iostream>
     using namespace std;
 
-    void replacecharacter(char str[], int size, char prevChar, char newChar){
-        for(int i = 0; i<size; i++){
+    void replacecharacter(char str[], char prevChar, char newChar){
+        for(int i = 0; str[i]!='\0'; i++){
             if(str[i] == prevChar){
                 str[i] = newChar;
             }
@@ -21,7 +21,7 @@
         cout<<"Enter the string: "<<endl;
         cin.getline(str,100);
 
-        replacecharacter(str,100,'@',' ');
+        replacecharacter(str,'@',' ');
         cout<<"Replaced string is: "<<str;
 
         return 0;
