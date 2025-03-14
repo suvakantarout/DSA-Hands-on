@@ -7,7 +7,9 @@ int main(){
 
     // string input
     cout<<"Enter your name: "<<endl;
+    // cin>>str;
     cin.getline(str,5);
+
 
     // print the string
     cout<<"Your name is: "<<str<<endl;
@@ -17,6 +19,7 @@ int main(){
     cout<<str[3] <<"-> " <<(int)str[3] <<endl;
     cout<<str[4] <<"->  " <<(int)str[4] <<endl;  //Null character
 
+    
     cout<<"Enter another string: ";
     cin.getline(str, 100, '.');  //(string name, size, delimeter)
     // Input will stop the delimeter found 
