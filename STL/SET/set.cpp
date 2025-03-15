@@ -32,8 +32,8 @@ int main(){
 	cout<<endl;
 	cout<<st.size()<<endl;
 	
+	
 	// st.find()
-
 	if(st.find(15) != st.end()){
 		cout<<"Found";
 	}
@@ -41,8 +41,8 @@ int main(){
 		cout<<"Not found"<<endl;
 	}
 	
-	// st.count()
 
+	// st.count()
 	if(st.count(15) == 1){
 		cout<<"found";
 	}
