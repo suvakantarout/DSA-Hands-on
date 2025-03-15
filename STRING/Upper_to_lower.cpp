@@ -22,7 +22,7 @@ int main(){
     char str[100];
     int size = 100;
     cout<<"Enter a string to convert: ";
-    cin>>str;
+    cin.getline(str,size);
 
     ToUpper(str, size);
     cout<<"Upper case string is: "<<str<<endl;
