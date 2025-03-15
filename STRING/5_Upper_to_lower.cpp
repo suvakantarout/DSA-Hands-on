@@ -19,8 +19,8 @@ void ToLower(char str[], int size){
 
 
 int main(){
-    char str[100];
     int size = 100;
+    char str[size];
     cout<<"Enter a string to convert: ";
     cin.getline(str,size);
 
