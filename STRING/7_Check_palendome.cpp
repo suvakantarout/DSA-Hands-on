@@ -1,19 +1,23 @@
 
+
 #include<iostream>
 #include<cstring>   //For str length
 using namespace std;
 
-void Reverse(char str[], int size){
+bool Reverse(char str[], int size){
     int len = strlen(str);
     int i = 0;
     int j = len - 1;
     while(i < j){
-        int t = str[i];
-        str[i] = str[j];
-        str[j] = t;
-        i++;
-        j--;
+        if(str[i] == str[j]){
+            i++;
+            j--;
+        }
+        else{
+            return false;
+        }
     }
+    return true;
 }
 
 int main(){
@@ -22,8 +26,13 @@ int main(){
     cout<<"Enter a string to convert: ";
     cin.getline(str,size);
 
-    Reverse(str, size);
-    cout<<"Reversed string is: "<<str;
+
+    if(Reverse(str, size) == true){
+        cout<<"PALENDROME";
+    }
+    else{
+        cout<<"NOT PALEDROME";
+    }
 
     return 0;
 }
