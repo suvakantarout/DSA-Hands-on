@@ -2,7 +2,7 @@
 using namespace std;
 
 int DigitCount(int n, int c){
-	int digit = 0;
+	// int digit = 0;
 	
 	if(n == 0){
 		return c;
