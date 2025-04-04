@@ -19,11 +19,11 @@ int main() {
         wordCount[word]++;
     }
 
-    map<string, int> sortedWordCount(wordCount.begin(), wordCount.end());
+    // map<string, int> sortedWordCount(wordCount.begin(), wordCount.end());
 
     cout << "Word frequencies:\n";
-    for (const auto& pair : sortedWordCount) {
-        cout << pair.first << " : " << pair.second << endl;
+    for (auto & it : wordCount) {
+        cout << it.first << " : " << it.second << endl;
     }
 
     return 0;
