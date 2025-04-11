@@ -8,9 +8,9 @@ int SOD(int n){
 	unsigned int sum = 0;
 	
 	while(n> 0){
-		unsigned int digit = n % 10;
-		sum += digit;
-		n /= 10;
+		unsigned int digit = n % 10; // find last digit
+		sum += digit; //Add that digit to sum
+		n /= 10;  // update
 	}
 	return sum;
 }

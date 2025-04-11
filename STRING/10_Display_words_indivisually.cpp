@@ -18,13 +18,12 @@ int main() {
                 word = "";
             }
         } else {
-            word += s[i];
+            word = word + s[i];
         }
     }
 
     return 0;
 }
-
 
 
 
